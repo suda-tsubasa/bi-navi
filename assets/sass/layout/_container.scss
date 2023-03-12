@@ -1,0 +1,19 @@
+@charset "utf-8";
+
+/*----------------------------------------
+    @use
+----------------------------------------*/
+@use "../foundation/mixin/mediaquery";
+@use "../foundation/mixin/fontFamily";
+
+/*----------------------------------------
+	l-container
+----------------------------------------*/
+.l-container{
+    background: #fff;
+    max-width: 900px;
+	margin: auto;
+}
+@include mediaquery.sp {
+	
+}

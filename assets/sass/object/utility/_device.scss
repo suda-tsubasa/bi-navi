@@ -1,0 +1,33 @@
+@charset "utf-8";
+
+/*----------------------------------------
+	@use
+----------------------------------------*/
+@use "../../foundation/mixin/mediaquery";
+
+/*----------------------------------------
+	u-device-sp
+----------------------------------------*/
+.u-device-sp{
+	display: none;
+	@include mediaquery.sp {
+		display: block;
+	}
+}
+/*----------------------------------------
+	u-device-tablet
+----------------------------------------*/
+.u-device-tablet{
+	display: none;
+	@include mediaquery.tablet {
+		display: block;
+	}
+}
+/*----------------------------------------
+	u-device-pc
+----------------------------------------*/
+.u-device-pc{
+	@include mediaquery.sp {
+		display: none;
+	}
+}

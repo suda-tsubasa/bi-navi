@@ -1,0 +1,31 @@
+@charset "utf-8";
+
+/*----------------------------------------
+	@use
+----------------------------------------*/
+@use "../foundation/mixin/mediaquery";
+	
+/*----------------------------------------
+	l-header
+----------------------------------------*/
+.l-header{
+	padding: 20px 30px;
+	&__logo{
+		line-height: 1;
+		a{
+			display: block;
+			width: 80px;
+		}
+	}
+}
+@include mediaquery.sp {
+	.l-header{
+		padding: 15px 20px;
+		&__logo{
+			a{
+				display: block;
+				width: 60px;
+			}
+		}
+	}
+}
